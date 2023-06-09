@@ -1,0 +1,105 @@
+<!--Intro to VS Code:
+    Code editor: a program that allows you to write code
+    *VS Code is a code editor that allows you to write code in a variety of languages
+        Panels, Bars and Menus.
+        *to open a VSC file in bash terminal, we can use the command: code <file name>
+        *indentation means the space between the code and the left side of the screen
+        *Activity Bar: the bar on the far left of the screen
+        *Side Bar: the bar on the left of the screen
+        *Status Bar: the bar on the bottom of the screen
+        *Panel: the bar on the right of the screen
+        *menu bar: the bar on the top of the screen
+        *minimap: the bar on the right of the screen. It shows a preview of the code
+        *Glif margin: the bar on the left of the screen. It shows the line numbers. we can click on it to add a breakpoint in order to debug our code.
+        * To zoom in and out, we can use the shortcut: ctrl + + or ctrl + -
+        * To close a folder, we can go to file and click on close folder
+        * we can use right click in explorer to create a new file or folder and also a folder in a folder.
+        * We can drag and drop files and folders in explorer from outside of VS Code by clicking on the file or folder and dragging it to the explorer.
+        *We can use search in the activity bar to search for a code or anything else in the files and folders. We can choose different options for the search such as case sensitive, whole word, regex, replace and files to include and exclude.
+        * We can change the indentation of the code by clicking on the tab size in the bottom right corner of the screen and choose convert indentation to spaces or convert indentation to tabs.
+        * We can also change the size of the indentation by choosing indent using spaces or indent using tabs.
+        * By using 'configure language specific settings' in command pallet>, we can change the indentation of the code for a specific language.
+
+        *------------------------------------------------------------------*
+        
+        * if we want to customize the terminal, we can go to command pallet>prefrences>open setting json and add the following code to the json file:
+        "terminal.integrated.fontFamily": "Cascadia Code PL",
+        "terminal.integrated.fontSize": 14,
+        "terminal.integrated.cursorStyle": "line",
+        "terminal.integrated.cursorBlinking": true,
+        "workbench.colorCustomizations": {
+            "terminal.foreground": "#00FF00",
+            "terminal.background": "#000000",
+            "terminalCursor.foreground": "#FFFFFF",
+            "terminal.ansiBlack": "#000000",
+            "terminal.ansiBlue": "#0000FF",
+            "terminal.ansiBrightBlack": "#808080",
+            "terminal.ansiBrightBlue": "#0000FF",
+            "terminal.ansiBrightCyan": "#00FFFF",
+            "terminal.ansiBrightGreen": "#00FF00",
+            "terminal.ansiBrightMagenta": "#FF00FF",
+            "terminal.ansiBrightRed": "#FF0000",
+            "terminal.ansiBrightWhite": "#FFFFFF",
+            "terminal.ansiBrightYellow": "#FFFF00",
+            "terminal.ansiCyan": "#00FFFF",
+            "terminal.ansiGreen": "#00FF00",
+            "terminal.ansiMagenta": "#FF00FF",
+            "terminal.ansiRed": "#FF0000",
+            "terminal.ansiWhite": "#FFFFFF",
+            "terminal.ansiYellow": "#FFFF00"
+        } we can use any of those codes.
+        *------------------------------------------------------------------*
+        * Or we can use settings and search for terminal and change the settings.
+
+        * By searching bracket pair colorization in the settings, we can change the color of the brackets.
+
+        *-----------------------------Shortcuts-------------------------------------*
+
+        * To open a file, we can use the shortcut: ctrl + o
+        * To open a folder, we can use the shortcut: ctrl + k + o
+        * To save a file, we can use the shortcut: ctrl + s
+        * To save all files, we can use the shortcut: ctrl + k + s
+        * To close a file, we can use the shortcut: ctrl + w
+        * To close all files, we can use the shortcut: ctrl + k + w
+        * To close a folder, we can use the shortcut: ctrl + k + f
+
+        * To open the command palette, we can use the shortcut: ctrl + shift + p
+        * To open the terminal, we can use the Shortcut: ctrl + `
+        * To open the explorer, we can use the Shortcut: ctrl + shift + e
+        * To have multiple cursors, we can use the Shortcut: ctrl + alt + up or down arrow
+        * To select all occurrences of current selection: Ctrl+shift+L
+        * To select all occurrences of current word: Ctrl+D (repeat to select next occurrence). we can select occurrences one by one by using this shortcut.
+        * To convert a code block to a comment, we can use the shortcut: ctrl + /
+        * To move a line up or down, we can use the shortcut: alt + up or down arrow
+        * To copy a line up or down, we can use the shortcut: shift + alt + up or down arrow
+        * To delete a line, we can use the shortcut: ctrl + shift + k
+        * To go to a line, we can use the shortcut: ctrl + g
+        * shift + alt + f: to format the code. it will format the code based on the settings. like the indentation.
+        * ctrl + L : to select the line
+        * To go to full screen, we can use the shortcut: f11 or use the icon in the top right corner of the screen.
+
+        *-----------------------------Multi folders-------------------------------------*
+
+        *To open multiple folders, we can go to file>add folder to workspace and choose the folder we want to add.
+        *To save the workspace, we can go to file>save workspace as and choose the folder we want to save the workspace in.
+
+        *-----------------------------Sticky Scroll-------------------------------------*
+
+        * If we want to see where we are in the code, we can use sticky scroll. To enable it, we can go to command pallet>toggle sticky scroll and enable it. Then we can see a line on the top side of the screen that shows where we are in the code.
+
+        *--------------------------------Auto Update----------------------------------*
+
+        * To enable extentions auto update, we can go to command pallet>toggle auto update and enable it.
+
+        *---------------------------------ESLint------------------------------------*
+
+        * ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+        *To install ESLint, we can go to extensions and search for ESLint and install it.
+        * Then we have to open our terminal and type: npm init
+        * After that, we have to type: npm install eslint --save-dev eslint. This will install ESLint in our project.
+        * then we have to type: npm init @eslint/config to create a config file for ESLint.
+        * Then we can find a file called: .eslintrc.json in our project.
+        * By doing this, we can use ESLint in our project to check our code for errors.
+
+        *---------------------------------Code snap------------------------------------*
+        * To take a picture from a code, we can use code snap by selecting the part of the code we want to take a picture from and then right click and choose code snap. Then we can save the picture in our computer by clicking on the snap shape. To change the configuration of the code snap, we can go to command pallet>code snap: configure and change the settings. or by finding the extention in the extensions and change the settings.
